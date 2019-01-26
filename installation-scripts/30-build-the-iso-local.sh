@@ -117,6 +117,7 @@ echo "################################################################## "
 echo
 echo "Copying files and folder to ~/arcolinux-build"
 sudo cp -r ../../arcolinux-iso ~/arcolinux-build
+sudo cp -rf ../archiso/packages.x86_64 ~/arcolinux-build/archiso/packages.x86_64
 
 sudo chmod 750 ~/arcolinux-build/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 ~/arcolinux-build/archiso/airootfs/etc/polkit-1/rules.d

@@ -601,7 +601,7 @@ xfce4-xkb-plugin
 xfce4-panel-profiles
 
 #Needed for Calamares installer
-calamares
+calamares-git
 arcolinux-system-installation-git
 arcolinux-calamares-git
 ckbcomp
