@@ -603,7 +603,7 @@ xfce4-panel-profiles
 #Needed for Calamares installer
 calamares-dev
 arcolinux-system-installation-git
-arcolinux-calamares-dev
+arcolinux-calamares-dev-git
 ckbcomp
 networkmanager
 upower
