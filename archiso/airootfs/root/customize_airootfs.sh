@@ -127,8 +127,7 @@ echo "##########################################################"
 echo
 umaskFunc
 echo "#####   Function umaskFunc done    #####"
-#localeGenFunc
-#echo "#####   Function localeGenFunc done    #####"
+echo
 setTimeZoneAndClockFunc
 echo
 echo "#####   Function setTimeZoneAndClockFunc done    #####"
