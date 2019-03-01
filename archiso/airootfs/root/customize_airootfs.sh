@@ -50,8 +50,18 @@ function createLiveUserFunc () {
 function setDefaultsFunc() {
     export _EDITOR=nano
     echo "EDITOR=${_EDITOR}" >> /etc/environment
-    #echo "EDITOR=${_EDITOR}" >> /etc/skel/.bashrc
     echo "EDITOR=${_EDITOR}" >> /etc/profile
+}
+
+function fixHavegedFunc(){
+    systemctl start haveged
+    systemctl enable haveged
+}
+
+function fixPermissionsFunc() {
+    chmod 750 /etc/sudoers.d
+    chmod 750 /etc/polkit-1/rules.d
+    chgrp polkitd /etc/polkit-1/rules.d
 }
 
 function enableServicesFunc() {
@@ -82,6 +92,14 @@ function fixWifiFunc() {
     su -c 'echo "wifi.scan-rand-mac-address=no" >> /etc/NetworkManager/NetworkManager.conf'
 }
 
+function fixGeoclueRedshift() {
+    pathToGeoclueConf="/etc/geoclue/geoclue.conf"
+    echo '' >> $pathToGeoclueConf
+    echo '[redshift]' >> $pathToGeoclueConf
+    echo 'allowed=true' >> $pathToGeoclueConf
+    echo 'system=false' >> $pathToGeoclueConf
+    echo 'users=' >> $pathToGeoclueConf
+}
 
 function fixHibernateFunc() {
     sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
@@ -119,8 +137,14 @@ createLiveUserFunc
 echo "#####   Function createLiveUserFunc done    #####"
 setDefaultsFunc
 echo "#####   Function setDefaultsFunc done    #####"
+fixHavegedFunc
+echo "#####   Function fixHavegedFunc done    #####"
+fixPermissionsFunc
+echo "#####   Function fixPermissionsFunc done    #####"
 enableServicesFunc
 echo "#####   Function enableServicesFunc done    #####"
+fixGeoclueRedshift
+echo "#####   Function fixGeoclueRedshift done    #####"
 fixWifiFunc
 echo "#####   Function fixWifiFunc done    #####"
 fixHibernateFunc
