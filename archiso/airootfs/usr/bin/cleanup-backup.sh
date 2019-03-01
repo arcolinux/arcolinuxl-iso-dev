@@ -10,8 +10,8 @@ rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
-gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ position 'left'
-gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ theme 'OSXYosemite'
-gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ zoom-enabled 'true'
-gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ icon-size '36'
+#gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ position 'left'
+#gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ theme 'OSXYosemite'
+#gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ zoom-enabled 'true'
+#gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ icon-size '36'
 rm /usr/bin/cleanup.sh
