@@ -54,7 +54,6 @@ function setDefaultsFunc() {
 }
 
 function fixHavegedFunc(){
-    systemctl start haveged
     systemctl enable haveged
 }
 
@@ -122,34 +121,66 @@ function getNewMirrorCleanAndUpgrade() {
     pacman -Sc --noconfirm
     pacman -Syyu --noconfirm
 }
-
+echo
+echo "##########################################################"
+echo "##########################################################"
+echo
 umaskFunc
 echo "#####   Function umaskFunc done    #####"
 #localeGenFunc
 #echo "#####   Function localeGenFunc done    #####"
 setTimeZoneAndClockFunc
+echo
 echo "#####   Function setTimeZoneAndClockFunc done    #####"
+echo
 editOrCreateConfigFilesFunc
+echo
 echo "#####   Function editOrCreateConfigFilesFunc done    #####"
+echo
 configRootUserFunc
+echo
 echo "#####   Function configRootUserFunc done    #####"
+echo
 createLiveUserFunc
+echo
 echo "#####   Function createLiveUserFunc done    #####"
+echo
 setDefaultsFunc
+echo
 echo "#####   Function setDefaultsFunc done    #####"
+echo
 fixHavegedFunc
+echo
 echo "#####   Function fixHavegedFunc done    #####"
+echo
 fixPermissionsFunc
+echo
 echo "#####   Function fixPermissionsFunc done    #####"
+echo
 enableServicesFunc
+echo
 echo "#####   Function enableServicesFunc done    #####"
+echo
 fixGeoclueRedshift
+echo
 echo "#####   Function fixGeoclueRedshift done    #####"
+echo
 fixWifiFunc
+echo
 echo "#####   Function fixWifiFunc done    #####"
+echo
 fixHibernateFunc
+echo
 echo "#####   Function fixHibernateFunc done    #####"
+echo
 initkeysFunc
+echo
 echo "#####   Function  initkeysFunc done    #####"
+echo
 getNewMirrorCleanAndUpgrade
+echo
 echo "#####   Function getNewMirrorCleanAndUpgrade done    #####"
+echo
+echo "##########################################################"
+echo "##########################################################"
+echo
