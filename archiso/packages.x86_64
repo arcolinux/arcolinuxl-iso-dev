@@ -192,16 +192,16 @@ gsfonts
 gtk3-print-backends
 gutenprint
 libcups
-hplip
+#hplip
 splix
 system-config-printer
 
 #printer extra for hplip
-pyqt5-common
-python-pillow
-python-pip
-python-pyqt5
-python-reportlab
+#pyqt5-common
+#python-pillow
+#python-pip
+#python-pyqt5
+#python-reportlab
 
 #tumbler
 tumbler
