@@ -1,4 +1,5 @@
 #!/bin/bash
+hardcode-fixer
 rm -f /etc/sudoers.d/g_wheel
 rm -rf /usr/share/backgrounds/xfce
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
