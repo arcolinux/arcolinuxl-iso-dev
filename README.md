@@ -1,5 +1,6 @@
 # arcolinux-iso-dev
 
-# development
+With this github you can build your own ArcoLinux version.
 
+# development
 
