@@ -618,4 +618,5 @@ plasma-framework
 hwinfo
 qt5-xmlpatterns
 
-linux-lts
+#Long Term Service kernel
+#linux-lts
