@@ -196,7 +196,7 @@ sudo ./build.sh -v
 
 echo
 echo "################################################################## "
-tput setaf 2;echo "Phase 7 : Copying the iso to ~/ArcoLinuxD-Out";tput sgr0
+tput setaf 2;echo "Phase 7 : Copying the iso to ~/ArcoLinux-Out";tput sgr0
 echo "################################################################## "
 echo
 [ -d  ~/ArcoLinux-Out ] || mkdir ~/ArcoLinux-Out
