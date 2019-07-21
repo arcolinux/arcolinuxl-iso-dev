@@ -14,6 +14,12 @@
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
+buildFolder="$HOME/arcolinux-build"
+outFolder="$HOME/ArcoLinux-Out"
+isoNameOld="iso_name=arcolinux"
+isoNameNew="iso_name=arcolinux-lts"
+calConfOld="arcolinux-calamares-git"
+calConfNew="arcolinux-calamares-lts-git"
 
 echo
 echo "################################################################## "
@@ -87,7 +93,7 @@ tput setaf 2;echo "Phase 3 : Making sure we start with a clean slate";tput sgr0
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
-[ -d ~/arcolinux-build ] && sudo rm -rf ~/arcolinux-build
+[ -d $buildFolder ] && sudo rm -rf $buildFolder
 
 
 echo
@@ -95,12 +101,12 @@ echo "################################################################## "
 tput setaf 2;echo "Phase 4 : Moving files to build folder";tput sgr0
 echo "################################################################## "
 echo
-echo "Copying files and folder to ~/arcolinux-build"
-sudo cp -r ../../arcolinux-iso-dev ~/arcolinux-build
+echo "Copying files and folder to build folder"
+sudo cp -r ../../arcolinux-iso-dev $buildFolder
 
-sudo chmod 750 ~/arcolinux-build/archiso/airootfs/etc/sudoers.d
-sudo chmod 750 ~/arcolinux-build/archiso/airootfs/etc/polkit-1/rules.d
-sudo chgrp polkitd ~/arcolinux-build/archiso/airootfs/etc/polkit-1/rules.d
+sudo chmod 750 $buildFolder/archiso/airootfs/etc/sudoers.d
+sudo chmod 750 $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
+sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
 
 echo
 echo "################################################################## "
@@ -124,14 +130,14 @@ echo "Type the number..."
 
 read CHOICE
 
-WDP=$HOME"/arcolinux-build/archiso"
+WDP=$buildFolder"/archiso"
 
 case $CHOICE in
 
     1 )
 			echo
 			echo "################################################################## "
-      echo "You have chosen for the linux kernel"
+			echo "You have chosen for the linux kernel"
 			echo "################################################################## "
 			echo
       ;;
@@ -145,16 +151,16 @@ case $CHOICE in
 			REPLACE="calamares-lts"
 			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
 
-			FIND="arcolinux-calamares-git"
-			REPLACE="arcolinux-calamares-lts-git"
+			FIND=$calConfOld
+			REPLACE=$calConfNew
 			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
 
 			FIND="#arcolinux-local-repo-git"
 			REPLACE="arcolinux-local-repo-git"
 			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/packages.x86_64
 
-			FIND="iso_name=arcolinux"
-			REPLACE="iso_name=arcolinux-lts"
+			FIND=$isoNameOld
+			REPLACE=$isoNameNew
 			sudo sed -i "s/$FIND/$REPLACE/g" $WDP/build.sh
       ;;
     * )
@@ -171,16 +177,16 @@ tput setaf 2;echo "Phase 6 : Building the iso";tput sgr0
 echo "################################################################## "
 echo
 
-cd ~/arcolinux-build/archiso/
+cd $buildFolder/archiso/
 sudo ./build.sh -v
 
 echo
 echo "################################################################## "
-tput setaf 2;echo "Phase 7 : Copying the iso to ~/ArcoLinux-Out";tput sgr0
+tput setaf 2;echo "Phase 7 : Copying the iso to out folder";tput sgr0
 echo "################################################################## "
 echo
-[ -d  ~/ArcoLinux-Out ] || mkdir ~/ArcoLinux-Out
-cp ~/arcolinux-build/archiso/out/arcolinux* ~/ArcoLinux-Out
+[ -d  $outFolder ] || mkdir $outFolder
+cp $buildFolder/archiso/out/arcolinux* $outFolder
 
 echo
 echo "################################################################## "
@@ -188,4 +194,4 @@ tput setaf 2;echo "Phase 8 : Making sure we start with a clean slate next time";
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
-[ -d ~/arcolinux-build ] && sudo rm -rf ~/arcolinux-build
+[ -d $buildFolder ] && sudo rm -rf $buildFolder
