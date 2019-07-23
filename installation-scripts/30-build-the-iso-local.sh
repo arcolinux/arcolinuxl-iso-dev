@@ -16,6 +16,7 @@
 ##################################################################################################################
 buildFolder="$HOME/arcolinux-build"
 outFolder="$HOME/ArcoLinux-Out"
+#changing to LTS
 isoNameOld="iso_name=arcolinux"
 isoNameNew="iso_name=arcolinux-lts"
 calConfOld="arcolinux-calamares-git"
