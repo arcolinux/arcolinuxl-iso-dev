@@ -7,5 +7,4 @@ rm /root/{.automated_script.sh,.zlogin}
 rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
 rm /usr/bin/arcolinux-all-cores.sh
-mv /boot/vmlinuz /boot/vmlinuz-linux
 rm /usr/bin/arcolinux-cleanup.sh
