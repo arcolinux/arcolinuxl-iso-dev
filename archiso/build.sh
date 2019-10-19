@@ -3,7 +3,7 @@
 set -e -u
 
 iso_name=arcolinux-dev
-iso_label="arcolinux-dev-v19.11.2"
+iso_label="arcolinux-dev-v19.11.3"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
 iso_version="v19.11.2"
