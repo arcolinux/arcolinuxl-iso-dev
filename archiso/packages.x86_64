@@ -670,9 +670,9 @@ xfce4-xkb-plugin
 xfce4-panel-profiles
 
 #Needed for Calamares installer
-calamares-dev
+arco-calamares
 arcolinux-system-installation-git
-arcolinux-calamares-dev-git
+arco-calamares-config-git
 ckbcomp
 upower
 kcoreaddons
