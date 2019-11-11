@@ -409,7 +409,7 @@ zsh-syntax-highlighting
 #                           ARCOLINUX_REPO_ISO
 ###########################################################################
 
-#applications
+###applications
 vivaldi
 #vivaldi-codecs-ffmpeg-extra-bin
 
@@ -424,7 +424,7 @@ xcursor-vanilla-dmz-aa
 ttf-font-awesome
 ttf-ms-fonts
 
-###i3
+###i3wm
 i3-gaps-next-git
 
 ###icons
@@ -707,6 +707,8 @@ xfce4-panel-profiles
 ###########################################################################
 
 arco-calamares
+#arco-calamares-dev
+#arco-calamares-comp
 arcolinux-system-installation-git
 
 ###########################################################################
@@ -732,29 +734,30 @@ qt5-xmlpatterns
 #                                ARCOLINUX CONFIG CALAMARES
 ###########################################################################
 
-#arcob-calamares-config-awesome
-#arcob-calamares-config-bspwm
-#arcob-calamares-config-budgie
-#arcob-calamares-config-cinnamon
-#arcob-calamares-config-deepin
-#arcob-calamares-config-dwm
-#arcob-calamares-config-enlightenment
-#arcob-calamares-config-gnome
-#arcob-calamares-config-herbstluftwm
-#arcob-calamares-config-i3
-#arcob-calamares-config-jwm
-#arcob-calamares-config-lxqt
-#arcob-calamares-config-mate
-#arcob-calamares-config-openbox
-#arcob-calamares-config-plasma
-#arcob-calamares-config-qtile
-#arcob-calamares-config-xfce
-#arcob-calamares-config-xmonad
-#arcob-calamares-config-xtended
-arco-calamares-config
-#arco-calamares-config-dev
-#arcod-calamares-config
-#arcod-calamares-config-dev
+#arcob-calamares-config-awesome-git
+#arcob-calamares-config-bspwm-git
+#arcob-calamares-config-budgie-git
+#arcob-calamares-config-cinnamon-git
+#arcob-calamares-config-deepin-git
+#arcob-calamares-config-dwm-git
+#arcob-calamares-config-enlightenment-git
+#arcob-calamares-config-gnome-git
+#arcob-calamares-config-herbstluftwm-git
+#arcob-calamares-config-i3-git
+#arcob-calamares-config-jwm-git
+#arcob-calamares-config-lxqt-git
+#arcob-calamares-config-mate-git
+#arcob-calamares-config-openbox-git
+#arcob-calamares-config-plasma-git
+#arcob-calamares-config-qtile-git
+#arcob-calamares-config-xfce-git
+#arcob-calamares-config-xmonad-git
+#arcob-calamares-config-xtended-git
+arco-calamares-config-git
+#arco-calamares-config-dev-git
+#arco-calamares-config-comp-git
+#arcod-calamares-config-git
+#arcod-calamares-config-dev-git
 
 ###########################################################################
 #                                DISTRO SPECIFIC
