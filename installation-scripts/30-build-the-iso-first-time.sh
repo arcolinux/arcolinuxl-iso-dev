@@ -14,13 +14,9 @@
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
+# set our parameters
 buildFolder="$HOME/arcolinux-build"
 outFolder="$HOME/ArcoLinux-Out"
-#changing to LTS
-isoNameOld="iso_name=arcolinux"
-isoNameNew="iso_name=arcolinux-lts"
-calConfOld="arcolinux-calamares-git"
-calConfNew="arcolinux-calamares-lts-git"
 
 echo
 echo "################################################################## "
@@ -32,7 +28,6 @@ rm -rf ../archiso/airootfs/etc/skel/.* 2> /dev/null
 echo "getting .bashrc from arcolinux-root"
 wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O ../archiso/airootfs/etc/skel/.bashrc
 echo ".bashrc copied to /etc/skel"
-
 
 echo
 echo "################################################################## "
