@@ -573,27 +573,27 @@ arcolinux-xfce-git
 #                           ARCOLINUX DESKTOP FOLDER
 ###########################################################################
 
-#arcolinux-awesome
-#arcolinux-bspwm
-#arcolinux-budgie
-#arcolinux-cinnamon
-#arcolinux-deepin
-#arcolinux-dwm
-#arcolinux-enlightenment
-#arcolinux-gnome
-#arcolinux-herbstluftwm
-#arcolinux-i3wm
-#arcolinux-jwm
-#arcolinux-lxqt
-#arcolinux-mate
-#arcolinux-openbox
-#arcolinux-openbox-xtended
-#arcolinux-plasma
-#arcolinux-plasma-nemesis
-#arcolinux-qtile
-#arcolinux-xfce
-#arcolinux-xmonad-polybar
-#arcolinux-xmonad-xmobar
+#arcolinux-awesome-git
+#arcolinux-bspwm-git
+#arcolinux-budgie-git
+#arcolinux-cinnamon-git
+#arcolinux-deepin-git
+#arcolinux-dwm-git
+#arcolinux-enlightenment-git
+#arcolinux-gnome-git
+#arcolinux-herbstluftwm-git
+#arcolinux-i3wm-git
+#arcolinux-jwm-git
+#arcolinux-lxqt-git
+#arcolinux-mate-git
+#arcolinux-openbox-git
+#arcolinux-openbox-xtended-git
+#arcolinux-plasma-git
+#arcolinux-plasma-nemesis-git
+#arcolinux-qtile-git
+#arcolinux-xfce-git
+#arcolinux-xmonad-polybar-git
+#arcolinux-xmonad-xmobar-git
 
 ###########################################################################
 #                           ARCOLINUX CONFIG FOLDER
