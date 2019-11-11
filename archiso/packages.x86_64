@@ -1,5 +1,5 @@
 #####################################################################
-##                            Packages available
+##                            PACKAGES AVAILABLE
 #####################################################################
 
 ###archiso
@@ -236,7 +236,7 @@ poppler-glib
 poppler-qt5
 
 #########################################################################
-#                  Software from Arch Linux repositories
+#                  SOFTWARE FROM ARCH LINUX REPOSITORIES
 #########################################################################
 
 ###applications
@@ -305,7 +305,6 @@ papirus-icon-theme
 ###lightdm
 accountsservice
 lightdm
-
 
 ###lx-applications
 lxappearance
@@ -406,9 +405,8 @@ zsh
 zsh-completions
 zsh-syntax-highlighting
 
-
 ###########################################################################
-#                      arcolinux_repo_iso
+#                           ARCOLINUX_REPO_ISO
 ###########################################################################
 
 #applications
@@ -484,7 +482,7 @@ yad
 yay-bin
 
 ###########################################################################
-#                               Games
+#                               GAMES
 ###########################################################################
 
 #steam
@@ -493,10 +491,10 @@ yay-bin
 #sauerbraten
 #xonotic
 
+###########################################################################
+#                           ARCOLINUX FOLDER
+###########################################################################
 
-###########################################################################
-#                           ArcoLinux Folder
-###########################################################################
 #arcolinux-arc-themes-git
 arcolinux-arc-themes-nico-git
 #arcolinux-awesome-git
@@ -571,9 +569,8 @@ arcolinux-xfce-git
 #arcolinux-xmonad-polybar-git
 #arcolinux-xmonad-xmobar-git
 
-
 ###########################################################################
-#                           ArcoLinux Desktop Folder
+#                           ARCOLINUX DESKTOP FOLDER
 ###########################################################################
 
 #arcolinux-awesome
@@ -599,7 +596,7 @@ arcolinux-xfce-git
 #arcolinux-xmonad-xmobar
 
 ###########################################################################
-#                           ArcoLinux Config Folder
+#                           ARCOLINUX CONFIG FOLDER
 ###########################################################################
 
 #arcolinux-config-awesome-git
@@ -623,7 +620,7 @@ arcolinux-config-git
 #arcolinux-config-xmonad-git
 
 ###########################################################################
-#                           ArcoLinux Dconf Folder
+#                           ARCOLINUX DCONF FOLDER
 ###########################################################################
 
 #arcolinux-awesome-dconf-git
@@ -646,7 +643,6 @@ arcolinux-dconf-git
 #arcolinux-xfce-dconf-git
 #arcolinux-xmonad-dconf-git
 #arcolinux-xtended-dconf-git
-
 
 ###########################################################################
 #                                XFCE
@@ -759,3 +755,7 @@ arco-calamares-config
 #arco-calamares-config-dev
 #arcod-calamares-config
 #arcod-calamares-config-dev
+
+###########################################################################
+#                                DISTRO SPECIFIC
+###########################################################################
