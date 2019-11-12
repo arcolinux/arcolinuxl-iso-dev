@@ -220,7 +220,7 @@ splix
 system-config-printer
 
 ###printer extra for hplip
-#pyqt5-common
+pyqt5-common
 #python-pillow
 #python-pip
 #python-pyqt5
@@ -674,7 +674,6 @@ i3-gaps-next-git
 
 ###openbox
 gtk2-perl
-gtk-engine-murrine
 obkey
 obmenu3
 obmenu-generator
@@ -740,3 +739,7 @@ xfce4-xkb-plugin
 
 xfce4-panel-profiles
 gtk-engine-murrine
+
+###########################################################################
+#                                ISO SPECIFIC
+###########################################################################
