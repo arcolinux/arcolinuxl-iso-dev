@@ -100,9 +100,9 @@ Include = /etc/pacman.d/mirrorlist
 #SigLevel = Optional TrustAll
 #Server = file:///home/custompkgs
 
-[arcolinux_repo_testing]
-SigLevel = Required DatabaseOptional
-Include = /etc/pacman.d/arcolinux-mirrorlist
+#[arcolinux_repo_testing]
+#SigLevel = Required DatabaseOptional
+#Include = /etc/pacman.d/arcolinux-mirrorlist
 
 [arcolinux_repo]
 SigLevel = Required DatabaseOptional
@@ -112,6 +112,6 @@ Include = /etc/pacman.d/arcolinux-mirrorlist
 SigLevel = Required DatabaseOptional
 Include = /etc/pacman.d/arcolinux-mirrorlist
 
-[arcolinux_repo_iso]
+[arcolinux_repo_xlarge]
 SigLevel = Required DatabaseOptional
 Include = /etc/pacman.d/arcolinux-mirrorlist
