@@ -2,11 +2,11 @@
 
 set -e -u
 
-iso_name=arcolinux-dev
-iso_label="arcolinux-dev-v19.12.10"
+iso_name=arcolinux
+iso_label="arcolinux-v19.12.15"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
-iso_version="v19.12.10"
+iso_version="v19.12.15"
 install_dir=arch
 work_dir=work
 out_dir=out
