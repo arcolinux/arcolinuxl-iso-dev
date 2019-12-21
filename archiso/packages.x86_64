@@ -98,9 +98,7 @@ xorg-xinit
 #xorg-drivers includes
 xf86-input-elographics
 xf86-input-evdev
-xf86-input-keyboard
 xf86-input-libinput
-xf86-input-mouse
 #xf86-input-synaptics
 xf86-input-vmmouse
 xf86-input-void
@@ -619,8 +617,8 @@ arcolinux-dconf-git
 #                                ARCOLINUX CALAMARES
 ###########################################################################
 
-arco-calamares
-#arco-calamares-dev
+#arco-calamares
+arco-calamares-dev
 #arco-calamares-comp
 arcolinux-system-installation-git
 
@@ -666,9 +664,9 @@ qt5-xmlpatterns
 #arcob-calamares-config-xfce-git
 #arcob-calamares-config-xmonad-git
 #arcob-calamares-config-xtended-git
-arco-calamares-config-git
+#arco-calamares-config-git
 #arco-calamares-config-comp-git
-#arco-calamares-config-dev-git
+arco-calamares-config-dev-git
 #arcod-calamares-config-git
 #arcod-calamares-config-comp-git
 #arcod-calamares-config-dev-git

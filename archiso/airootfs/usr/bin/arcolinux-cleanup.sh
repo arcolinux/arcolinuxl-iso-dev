@@ -1,6 +1,6 @@
 #!/bin/bash
 #fix userid 972 error lightdm
-chage -E -1 lightdm
+#chage -E -1 lightdm
 rm -f /etc/sudoers.d/g_wheel
 rm -rf /usr/share/backgrounds/xfce
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
