@@ -445,7 +445,6 @@ pamac-aur
 peek
 pulseaudio-equalizer-ladspa
 #python-pyparted
-#python2-pyparted
 python-pywal
 screenkey-git
 sublime-text-dev
