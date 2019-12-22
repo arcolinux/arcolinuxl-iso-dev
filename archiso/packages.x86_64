@@ -444,7 +444,8 @@ numix-gtk-theme-git
 pamac-aur
 peek
 pulseaudio-equalizer-ladspa
-python-pyparted
+#python-pyparted
+#python2-pyparted
 python-pywal
 screenkey-git
 sublime-text-dev
