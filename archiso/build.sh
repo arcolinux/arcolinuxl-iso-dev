@@ -2,7 +2,7 @@
 
 set -e -u
 
-iso_name=arcolinux
+iso_name=arcolinux-dev
 iso_label="arcolinux-dev-v20.1.1"
 iso_publisher="ArcoLinux <http://www.arcolinux.info>"
 iso_application="ArcoLinux Live/Rescue CD"
