@@ -267,6 +267,26 @@ make_iso() {
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -P "${iso_publisher}" -A "${iso_application}" -o "${out_dir}" iso "${iso_name}-${iso_version}.iso"
 }
 
+# checks and sign
+make_checks() {
+    echo "###################################################################"
+    tput setaf 3;echo "14. checks and sign";tput sgr0
+    echo "###################################################################"
+    echo "Building sha1sum"
+    echo "########################"
+    sha1sum ${out_dir}/${iso_label}.iso > ${out_dir}/${iso_label}.iso.sha1
+    echo "Building sha256sum"
+    echo "########################"
+    sha256sum ${out_dir}/${iso_label}.iso > ${out_dir}/${iso_label}.iso.sha256
+    echo "Moving pkglist.x86_64.txt"
+    cp ${work_dir}/iso/arch/pkglist.x86_64.txt  ${out_dir}/${iso_label}.iso.pkglist.txt
+    echo "########################"
+    echo "Building md5sum"
+    echo "########################"
+    md5sum ${out_dir}/${iso_label}.iso > ${out_dir}/${iso_label}.iso.md5
+}
+
+
 if [[ ${EUID} -ne 0 ]]; then
     echo "This script must be run as root."
     _usage 1
@@ -307,3 +327,4 @@ run_once make_efi
 run_once make_efiboot
 run_once make_prepare
 run_once make_iso
+run_once make_checks
