@@ -272,18 +272,22 @@ make_checks() {
     echo "###################################################################"
     tput setaf 3;echo "14. checks and sign";tput sgr0
     echo "###################################################################"
+    touch ${out_dir}/${iso_label}.checksum
     echo "Building sha1sum"
     echo "########################"
-    sha1sum ${out_dir}/${iso_label}.iso > ${out_dir}/${iso_label}.iso.sha1
+    echo "sha1sum">> ${out_dir}/${iso_label}.checksum
+    sha1sum ${out_dir}/${iso_label}.iso >> ${out_dir}/${iso_label}.checksum
     echo "Building sha256sum"
     echo "########################"
-    sha256sum ${out_dir}/${iso_label}.iso > ${out_dir}/${iso_label}.iso.sha256
-    echo "Moving pkglist.x86_64.txt"
-    cp ${work_dir}/iso/arch/pkglist.x86_64.txt  ${out_dir}/${iso_label}.iso.pkglist.txt
-    echo "########################"
+    echo "sha256sum" >> ${out_dir}/${iso_label}.checksum
+    sha256sum ${out_dir}/${iso_label}.iso >> ${out_dir}/${iso_label}.checksum
     echo "Building md5sum"
     echo "########################"
-    md5sum ${out_dir}/${iso_label}.iso > ${out_dir}/${iso_label}.iso.md5
+    echo "md5sum" >> ${out_dir}/${iso_label}.checksum
+    md5sum ${out_dir}/${iso_label}.iso >> ${out_dir}/${iso_label}.checksum
+    echo "Moving pkglist.x86_64.txt"
+    echo "########################"
+    cp ${work_dir}/iso/arch/pkglist.x86_64.txt  ${out_dir}/${iso_label}.iso.pkglist.txt
 }
 
 
