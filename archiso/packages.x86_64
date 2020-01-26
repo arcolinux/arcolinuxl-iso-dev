@@ -229,37 +229,35 @@ poppler-qt5
 #########################################################################
 
 ###applications
-#atom
-#chromium
-picom
+atom
+chromium
 #darktable
 #deadbeef
 dmenu
-#evolution
+evolution
 feh
 firefox
 #flashplugin
-#galculator
-#geany
-#gimp
+galculator
+geany
+gimp
 gmrun
 gsimplecal
-#guvcview
+guvcview
 imagemagick
-#inkscape
+inkscape
 #libreoffice-fresh
 lshw
 meld
 nitrogen
 numlockx
-#pragha
-#qbittorrent
+pragha
+qbittorrent
 scrot
-#simplescreenrecorder
+simplescreenrecorder
 termite
-tint2
-#variety
-#vlc
+variety
+vlc
 
 ###conky
 jq
@@ -287,17 +285,6 @@ ttf-ubuntu-font-family
 gnome-icon-theme
 #papirus-icon-theme
 
-###lightdm
-accountsservice
-lightdm
-
-###lx-applications
-lxappearance
-#lxappearance-gtk3
-lxappearance-obconf
-#lxappearance-obconf-gtk3
-lxrandr
-
 ###themes
 #adapta-gtk-theme
 arc-gtk-theme
@@ -308,7 +295,7 @@ kvantum-theme-arc
 arandr
 asciinema
 bash-completion
-#baobab
+baobab
 catfish
 cronie
 dconf-editor
@@ -319,15 +306,15 @@ file-roller
 #filezilla
 git
 gksu
-#glances
+glances
 gnome-disk-utility
 gnome-keyring
-#gnome-screenshot
+gnome-screenshot
 gnome-software
 gnome-software-packagekit-plugin
 gparted
-#gpick
-#gtop
+gpick
+gtop
 hardinfo
 hddtemp
 htop
@@ -335,7 +322,7 @@ htop
 #hunspell-en
 #hyphen
 #hyphen-en
-#grsync
+grsync
 intltool
 iw
 jsoncpp
@@ -343,10 +330,10 @@ libmtp
 laptop-detect
 lsb-release
 mlocate
-#nomacs
+nomacs
 oh-my-zsh-git
 p7zip
-#plank
+plank
 playerctl
 polkit
 polkit-gnome
@@ -357,7 +344,7 @@ qt5ct
 qt5-styleplugins
 #qt5-tools
 qt5-webkit
-#powertop
+powertop
 reflector
 #redshift
 rofi
@@ -365,7 +352,7 @@ rxvt-unicode
 simple-scan
 #shotwell
 speedtest-cli
-#timeshift
+timeshift
 #tlp
 tree
 ufw
@@ -378,7 +365,6 @@ w3m
 webkit2gtk
 wmctrl
 xapps
-xcape
 xdo
 xdotool
 xdg-desktop-portal-gtk
@@ -389,11 +375,11 @@ zsh-completions
 zsh-syntax-highlighting
 
 ###########################################################################
-#                           ARCOLINUX_REPO_ISO
+#                           ARCOLINUX_REPOS
 ###########################################################################
 
 ###applications
-#vivaldi
+vivaldi
 #vivaldi-codecs-ffmpeg-extra-bin
 
 ###cursors
@@ -431,29 +417,27 @@ archiso
 aurvote-git
 conky-lua-archers
 downgrade
-#font-manager-git
+font-manager-git
 glxinfo
 grub-customizer
 hardcode-fixer-git
 inxi
-menulibre
 mintstick-git
-mugshot
 neofetch
 numix-gtk-theme-git
 pamac-aur
-#peek
-#pulseaudio-equalizer-ladspa
+peek
+pulseaudio-equalizer-ladspa
 python-pyparted
-#python-pywal
-#screenkey-git
+python-pywal
+screenkey-git
 sublime-text-dev
 the_platinum_searcher-bin
 tmux
 trizen
 urxvt-perls
 urxvt-resize-font-git
-#wttr
+wttr
 yad
 #yakuake
 yay-bin
@@ -472,7 +456,7 @@ yay-bin
 ###########################################################################
 
 #arcolinux-arc-kde
-#arcolinux-arc-themes-nico-git
+arcolinux-arc-themes-nico-git
 arcolinux-bin-git
 arcolinux-common-git
 arcolinux-conky-collection-git
@@ -506,8 +490,8 @@ arcolinux-obmenu-generator-git
 #arcolinux-obmenu-generator-xtended-git
 arcolinux-openbox-themes-git
 arcolinux-pipemenus-git
-#arcolinux-plank-git
-#arcolinux-plank-themes-git
+arcolinux-plank-git
+arcolinux-plank-themes-git
 arcolinux-polybar-git
 arcolinux-qt5-git
 #arcolinux-qt5-plasma-git
@@ -521,7 +505,7 @@ arcolinux-system-config-git
 arcolinux-termite-themes-git
 arcolinux-tint2-git
 arcolinux-tint2-themes-git
-#arcolinux-variety-git
+arcolinux-variety-git
 arcolinux-wallpapers-git
 #arcolinux-wallpapers-lxqt-dual-git
 arcolinux-xfce4-panel-profiles-git
@@ -669,13 +653,42 @@ arco-calamares-config-dev-git
 #arcod-calamares-config-next-git
 
 ###########################################################################
-#                                DESKTOP SPECIFIC
+#                                DISPLAY MANAGER 
+###########################################################################
+
+###lightdm
+accountsservice
+lightdm
+
+###########################################################################
+#                         PICOM OR COMPTON 
+###########################################################################
+
+picom
+
+###########################################################################
+#                         GENERAL DESKTOP RELATED
+###########################################################################
+
+mugshot
+menulibre
+
+###########################################################################
+#                         ARCOLINUX ISO SPECIFIC
+###########################################################################
+
+###########################################################################
+#                                 i3
 ###########################################################################
 
 ###i3wm
 i3status
 i3blocks
 i3-gaps
+
+###########################################################################
+#                               OPENBOX
+###########################################################################
 
 ###openbox
 gtk2-perl
@@ -685,6 +698,16 @@ obmenu-generator
 obconf
 openbox
 perl-linux-desktopfiles
+tint2
+xcape
+openbox-themes-pambudi-git
+
+###lx-applications
+lxappearance
+#lxappearance-gtk3
+lxappearance-obconf
+#lxappearance-obconf-gtk3
+lxrandr
 
 ###########################################################################
 #                                XFCE
@@ -735,7 +758,7 @@ xfce4-netload-plugin
 xfce4-notes-plugin
 xfce4-notifyd
 xfce4-pulseaudio-plugin
-#xfce4-screensaver
+xfce4-screensaver
 xfce4-screenshooter
 xfce4-sensors-plugin
 xfce4-smartbookmark-plugin
