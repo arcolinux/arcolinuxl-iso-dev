@@ -37,7 +37,6 @@ irssi
 #iwd
 jfsutils
 #lftp
-libatomic_ops
 linux-atm
 linux-firmware
 logrotate
@@ -414,7 +413,6 @@ mkinitcpio-openswap
 
 ###utilities-repo
 archiso
-aurvote-git
 conky-lua-archers
 downgrade
 font-manager-git
@@ -485,8 +483,8 @@ arcolinux-logout-git
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
 arcolinux-nitrogen-git
-arcolinux-oblogout
-arcolinux-oblogout-themes-git
+#arcolinux-oblogout
+#arcolinux-oblogout-themes-git
 arcolinux-obmenu-generator-git
 #arcolinux-obmenu-generator-minimal-git
 #arcolinux-obmenu-generator-xtended-git
@@ -501,8 +499,8 @@ arcolinux-qt5-git
 arcolinux-rofi-git
 arcolinux-rofi-themes-git
 arcolinux-root-git
-arcolinux-slim
-arcolinux-slimlock-themes-git
+#arcolinux-slim
+#arcolinux-slimlock-themes-git
 arcolinux-system-config-git
 #arcolinuxd-system-config-git
 #arcolinux-systemd-services-git
