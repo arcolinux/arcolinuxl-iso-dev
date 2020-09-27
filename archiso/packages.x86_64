@@ -1,3 +1,5 @@
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
 #####################################################################
 ##                            PACKAGES AVAILABLE
 #####################################################################
@@ -5,7 +7,7 @@
 ###archiso
 amd-ucode
 arch-install-scripts
-#b43-fwcutter
+b43-fwcutter
 base
 bind-tools
 broadcom-wl
@@ -15,41 +17,37 @@ crda
 darkhttpd
 ddrescue
 dhclient
-#dhcpcd
-dialog
+dhcpcd
 diffutils
 dmraid
 dnsmasq
-dnsutils
 dosfstools
 edk2-shell
 efibootmgr
 ethtool
-exfat-utils
+exfatprogs
 f2fs-tools
 fsarchiver
 gnu-netcat
 gpm
 gptfdisk
 #grml-zsh-config
-grub
 haveged
 hdparm
 intel-ucode
 ipw2100-fw
 ipw2200-fw
 irssi
-#iwd
+iwd
 jfsutils
-#kitty-terminfo
-#lftp
+kitty-terminfo
+lftp
 linux
 linux-atm
 linux-firmware
-logrotate
 lsscsi
 lvm2
-#lynx
+lynx
 man-db
 man-pages
 mc
@@ -64,10 +62,9 @@ nbd
 ndisc6
 nfs-utils
 nilfs-utils
-#nmap
+nmap
 ntfs-3g
 nvme-cli
-ntp
 openconnect
 openssh
 openvpn
@@ -80,28 +77,29 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-#rxvt-unicode-terminfo
+rxvt-unicode-terminfo
 sdparm
 sg3_utils
 smartmontools
 sudo
 syslinux
-#systemd-resolvconf
+systemd-resolvconf
 tcpdump
 terminus-font
-#termite-terminfo
+termite-terminfo
 testdisk
 usb_modeswitch
 usbutils
 vim
 vpnc
-wget
 wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+zsh
+
 
 
 ###xorg
@@ -152,6 +150,7 @@ mesa
 ###base and base-devel
 base
 base-devel
+ntp
 
 ###virtual box or vmware
 open-vm-tools
@@ -479,7 +478,7 @@ arcolinux-docs-git
 arcolinux-faces-git
 arcolinux-fonts-git
 arcolinux-geany-git
-arcolinux-grub-theme-vimix-git
+arcolinux-grub-theme-vimix-DEV-git
 arcolinux-hblock-git
 arcolinux-keyring
 arcolinux-kvantum-git

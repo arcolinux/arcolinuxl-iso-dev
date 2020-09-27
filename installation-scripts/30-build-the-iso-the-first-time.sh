@@ -17,6 +17,7 @@
 # set our parameters
 buildFolder="$HOME/arcolinux-build"
 outFolder="$HOME/ArcoLinux-Out"
+isoFolder="arcolinux-iso-dev"
 
 echo
 echo "################################################################## "
@@ -98,7 +99,7 @@ tput setaf 2;echo "Phase 4 : Moving files to build folder";tput sgr0
 echo "################################################################## "
 echo
 echo "Copying files and folder to build folder"
-sudo cp -r ../../arcolinux-iso-dev $buildFolder
+sudo cp -r ../../$isoFolder $buildFolder
 
 sudo chmod 750 $buildFolder/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 $buildFolder/archiso/airootfs/etc/polkit-1/rules.d

@@ -1,4 +1,7 @@
-# mkinitcpio preset file for the 'linux' package
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# mkinitcpio preset file for the 'linux' package on archiso
 
 PRESETS=('archiso')
 
