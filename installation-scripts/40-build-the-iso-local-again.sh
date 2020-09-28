@@ -18,6 +18,8 @@
 buildFolder="$HOME/arcolinux-build"
 outFolder="$HOME/ArcoLinux-Out"
 isoFolder="arcolinux-iso-dev"
+iso_label="arcolinux-dev-v20.11.3"
+archisoversion=$(sudo pacman -Q archiso)
 
 echo
 echo "################################################################## "
@@ -82,7 +84,12 @@ else
 	fi
 
 fi
-
+echo
+echo "Changing the archiso.readme to the correct version"
+sudo sed -i "s/\(^archiso-version=\).*/\1$archisoversion/" ../archiso.readme
+echo
+echo "Setting mkarchiso to verbose"
+sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
 
 echo
 echo "################################################################## "
@@ -124,7 +131,7 @@ echo "################################################################## "
 echo
 
 cd $buildFolder/archiso/
-sudo ./build.sh -v
+sudo ./build.sh
 
 echo
 echo "################################################################## "
@@ -134,10 +141,26 @@ echo
 [ -d  $outFolder ] || mkdir $outFolder
 cp $buildFolder/archiso/out/arcolinux* $outFolder
 
+echo "###################################################################"
+tput setaf 3;echo "checks and sign";tput sgr0
+echo "###################################################################"
+echo "Building sha1sum"
+echo "########################"
+cd $outFolder
+sha1sum $iso_label-x86_64.iso > $iso_label.sha1
+echo "Building sha256sum"
+echo "########################"
+sha256sum $iso_label-x86_64.iso > $iso_label.sha256
+echo "Building md5sum"
+echo "########################"
+md5sum $iso_label-x86_64.iso > $iso_label.md5
+echo "Moving pkglist.x86_64.txt"
+echo "########################"
+cp $buildFolder/archiso/work/iso/arch/pkglist.x86_64.txt  $outFolder/$iso_label".iso.pkglist.txt"
 echo
 echo "################################################################## "
 tput setaf 2;echo "Phase 8 : Making sure we start with a clean slate next time";tput sgr0
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
-[ -d $buildFolder ] && sudo rm -rf $buildFolder
+#[ -d $buildFolder ] && sudo rm -rf $buildFolder
