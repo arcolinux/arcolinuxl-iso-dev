@@ -1,4 +1,8 @@
 #!/bin/bash
+# Copy grub Vimix theme (archiso deletes /boot when making the ISO)
+mkdir -p /boot/grub/themes
+cp -Rf /usr/share/grub/themes/Vimix /boot/grub/themes/
+grub-mkconfig -o /boot/grub/grub.cfg
 rm -f /etc/sudoers.d/g_wheel
 rm -rf /usr/share/backgrounds/xfce
 rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
@@ -9,6 +13,3 @@ mv /etc/arcolinux-release /etc/lsb-release
 pacman -R mkinitcpio-archiso --noconfirm
 mv /etc/mkinitcpio.d/arcolinux /etc/mkinitcpio.d/linux.preset
 rm /usr/local/bin/arcolinux-cleanup.sh
-if [[ -f "/usr/local/bin/arcolinux-customization.sh" ]]; then
-	/usr/local/bin/arcolinux-customization.sh
-fi
