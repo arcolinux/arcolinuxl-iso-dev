@@ -18,7 +18,7 @@
 buildFolder="$HOME/arcolinux-build"
 outFolder="$HOME/ArcoLinux-Out"
 isoFolder="arcolinux-iso-dev"
-iso_label="arcolinux-dev-v20.11.3"
+iso_label="arcolinux-dev-v20.11.4"
 archisoversion=$(sudo pacman -Q archiso)
 
 echo
@@ -89,7 +89,7 @@ echo "Changing the archiso.readme to the correct version"
 sudo sed -i "s/\(^archiso-version=\).*/\1$archisoversion/" ../archiso.readme
 echo
 echo "Setting mkarchiso to verbose"
-sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
+sudo sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
 
 echo
 echo "################################################################## "
