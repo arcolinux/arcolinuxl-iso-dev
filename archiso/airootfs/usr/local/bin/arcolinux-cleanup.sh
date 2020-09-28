@@ -37,7 +37,6 @@ echo " Copy grub Vimix theme (archiso deletes /boot when making the ISO)"
 echo "#################################"
 mkdir -p /boot/grub/themes
 cp -Rf /usr/share/grub/themes/Vimix /boot/grub/themes/
-grub-mkconfig -o /boot/grub/grub.cfg
 
 echo "Cleanup autologin root"
 echo "#################################"
@@ -53,7 +52,6 @@ rm -r /etc/systemd/system/etc-pacman.d-gnupg.mount
 rm /root/{.automated_script.sh,.zlogin}
 rm /usr/local/bin/arcolinux-all-cores.sh
 mv /etc/arcolinux-release /etc/lsb-release
-#pacman -R mkinitcpio-archiso --noconfirm
 mv /etc/mkinitcpio.d/arcolinux /etc/mkinitcpio.d/linux.preset
 rm /usr/local/bin/arcolinux-cleanup.sh
 echo "#################################"
