@@ -2,8 +2,7 @@
 echo "#################################"
 echo "Start arcolinux-cleanup.sh"
 echo "#################################"
-#usermod -s /usr/bin/bash root
-#cp -aT /etc/skel/ /root/
+
 echo "Permissions of important folders"
 echo "#################################"
 chmod 750 /root
@@ -43,6 +42,11 @@ cp -Rf /usr/share/grub/themes/Vimix /boot/grub/themes/
 echo "Cleanup autologin root"
 echo "#################################"
 rm -rf /etc/systemd/system/getty@tty1.service.d
+
+echo "Fix for pamac icons not showing"
+zcat /usr/share/app-info/xmls/community.xml.gz | sed 's|<em>||g;s|<\/em>||g;' | gzip > "new.xml.gz"
+sudo mv new.xml.gz /usr/share/app-info/xmls/community.xml.gz
+sudo appstreamcli refresh-cache --force
 
 #Original cleanup
 echo "Cleanup original files"
