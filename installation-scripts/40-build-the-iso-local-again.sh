@@ -112,6 +112,8 @@ sudo chmod 750 $buildFolder/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
 sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
 sudo chmod 750 $buildFolder/archiso/airootfs/root
+sudo chmod 600 $buildFolder/archiso/airootfs/etc/gshadow
+sudo chmod 600 $buildFolder/archiso/airootfs/etc/shadow
 
 echo "adding time to /etc/dev-rel"
 date_build=$(date -d now)
@@ -163,4 +165,4 @@ tput setaf 2;echo "Phase 8 : Making sure we start with a clean slate next time";
 echo "################################################################## "
 echo
 echo "Deleting the build folder if one exists - takes some time"
-#[ -d $buildFolder ] && sudo rm -rf $buildFolder
+[ -d $buildFolder ] && sudo rm -rf $buildFolder

@@ -112,6 +112,8 @@ sudo chmod 750 $buildFolder/archiso/airootfs/etc/sudoers.d
 sudo chmod 750 $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
 sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
 sudo chmod 750 $buildFolder/archiso/airootfs/root
+sudo chmod 600 $buildFolder/archiso/airootfs/etc/gshadow
+sudo chmod 600 $buildFolder/archiso/airootfs/etc/shadow
 
 echo "adding time to /etc/dev-rel"
 date_build=$(date -d now)
