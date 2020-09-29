@@ -65,7 +65,8 @@ rm /root/{.automated_script.sh,.zlogin}
 rm /usr/local/bin/arcolinux-all-cores.sh
 mv /etc/arcolinux-release /etc/lsb-release
 mv /etc/mkinitcpio.d/arcolinux /etc/mkinitcpio.d/linux.preset
-rm /usr/local/bin/arcolinux-cleanup.sh
+
 echo "#################################"
 echo "End arcolinux-cleanup.sh"
 echo "#################################"
+rm /usr/local/bin/arcolinux-cleanup.sh
