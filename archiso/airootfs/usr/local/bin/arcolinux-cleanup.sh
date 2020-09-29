@@ -2,7 +2,7 @@
 echo "#################################"
 echo "Start arcolinux-cleanup.sh"
 echo "#################################"
-usermod -s /usr/bin/bash root
+#usermod -s /usr/bin/bash root
 #cp -aT /etc/skel/ /root/
 echo "Permissions of important folders"
 echo "#################################"
