@@ -141,6 +141,7 @@ tput setaf 2;echo "Phase 7 : Copying the iso to out folder";tput sgr0
 echo "################################################################## "
 echo
 [ -d  $outFolder ] || mkdir $outFolder
+echo "Moving iso to " $outFolder
 cp $buildFolder/archiso/out/arcolinux* $outFolder
 
 echo "###################################################################"
