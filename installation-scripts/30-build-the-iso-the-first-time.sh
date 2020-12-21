@@ -15,12 +15,12 @@
 #
 ##################################################################################################################
 echo
-echo "###########################################################"
+echo "################################################################## "
 tput setaf 2
 echo "Phase 1 : "
 echo "- Setting General parameters"
 tput sgr0
-echo "###########################################################"
+echo "################################################################## "
 echo
 
 	#Let us set the desktop"
@@ -29,7 +29,7 @@ echo
 	desktop="xfce"
 	lightdmDesktop="xfce"
 
-	arcolinuxVersion='v21.01.4'
+	arcolinuxVersion='v21.01.5'
 
 	isoLabel='arcolinux-dev-'$arcolinuxVersion'-x86_64.iso'
 
@@ -38,24 +38,24 @@ echo
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
 	
-	echo "###########################################################"		
+	echo "################################################################## "		
 	echo "Building the desktop                   : "$desktop
 	echo "Building version                       : "$arcolinuxVersion
 	echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
 	echo "Build folder                           : "$buildFolder
 	echo "Out folder                             : "$outFolder
-	echo "###########################################################"		
+	echo "################################################################## "		
 
 echo
-echo "###########################################################"
+echo "################################################################## "
 tput setaf 2
 echo "Phase 2 :" 
 echo "- Checking if archiso is installed"
 echo "- Saving current archiso version to readme"
 echo "- Making mkarchiso verbose"
 tput sgr0
-echo "###########################################################"
+echo "################################################################## "
 echo
 
 	package="archiso"
@@ -111,13 +111,13 @@ echo
 	sudo sed -i 's/quiet="y"/quiet="n"/g' /usr/bin/mkarchiso
 
 echo
-echo "###########################################################"
+echo "################################################################## "
 tput setaf 2
 echo "Phase 3 :"
 echo "- Deleting the build folder if one exists"
 echo "- Copying the Archiso folder to build folder"
 tput sgr0
-echo "###########################################################"
+echo "################################################################## "
 echo
 
 	echo "Deleting the build folder if one exists - takes some time"
@@ -129,31 +129,35 @@ echo
 	cp -r ../archiso $buildFolder/archiso
 
 echo
-echo "###########################################################"
+echo "################################################################## "
 tput setaf 2
 echo "Phase 4 :"
 echo "- Deleting any files in /etc/skel"
 echo "- Getting the last version of bashrc in /etc/skel"
 echo "- Removing the old packages.x86_64 file from build folder"
 echo "- Copying the new packages.x86_64 file to the build folder"
+echo "- Changing group for polkit folder"
 tput sgr0
-echo "###########################################################"
+echo "################################################################## "
 echo
 
- 	echo "Deleting any files in /etc/skel"
- 	rm -rf $buildFolder/archiso/airootfs/etc/skel/.* 2> /dev/null
- 	echo
+	echo "Deleting any files in /etc/skel"
+	rm -rf $buildFolder/archiso/airootfs/etc/skel/.* 2> /dev/null
+	echo
 
 	echo "Getting the last version of bashrc in /etc/skel"
 	echo
- 	wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O $buildFolder/archiso/airootfs/etc/skel/.bashrc
- 
- 	echo "Removing the old packages.x86_64 file from build folder"
- 	rm $buildFolder/archiso/packages.x86_64
- 	echo
- 	echo "Copying the new packages.x86_64 file to the build folder"
- 	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
- 
+	wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O $buildFolder/archiso/airootfs/etc/skel/.bashrc
+
+	echo "Removing the old packages.x86_64 file from build folder"
+	rm $buildFolder/archiso/packages.x86_64
+	echo
+	echo "Copying the new packages.x86_64 file to the build folder"
+	cp -f ../archiso/packages.x86_64 $buildFolder/archiso/packages.x86_64
+	echo
+	echo "Changing group for polkit folder"
+	sudo chgrp polkitd $buildFolder/archiso/airootfs/etc/polkit-1/rules.d
+	#is not working so fixing this during calamares installation
 
 echo
 echo "################################################################## "
@@ -217,12 +221,12 @@ echo
 	yes | sudo pacman -Scc
 
 echo
-echo "###########################################################"
+echo "################################################################## "
 tput setaf 2
 echo "Phase 7 :"
 echo "- Building the iso - this can take a while - be patient"
 tput sgr0
-echo "###########################################################"
+echo "################################################################## "
 echo
 
 	[ -d $outFolder ] || mkdir $outFolder
@@ -267,7 +271,7 @@ tput setaf 2
 echo "Phase 9 :"
 echo "- Making sure we start with a clean slate next time"
 tput sgr0
-echo "###########################################################"
+echo "################################################################## "
 echo
 
 	echo "Deleting the build folder if one exists - takes some time"
