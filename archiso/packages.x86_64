@@ -190,7 +190,6 @@ blueberry
 bluez
 bluez-libs
 bluez-utils
-#bluez-firmware
 pulseaudio-bluetooth
 
 ###network
@@ -295,6 +294,7 @@ ttf-hack
 ttf-inconsolata
 ttf-liberation
 ttf-roboto
+ttf-roboto-mono
 ttf-ubuntu-font-family
 
 ###icons
@@ -515,6 +515,7 @@ arcolinux-logout-git
 arcolinux-logout-themes-git
 #arcolinux-lxqt-applications-add-git
 #arcolinux-lxqt-applications-hide-git
+#arcolinux-meta-logout
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
 arcolinux-nitrogen-git
