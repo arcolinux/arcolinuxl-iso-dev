@@ -34,7 +34,7 @@ echo
 	isoLabel='arcolinux-dev-'$arcolinuxVersion'-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 51-1"
+	archisoRequiredVersion="archiso 52-1"
 	buildFolder=$HOME"/arcolinux-build"
 	outFolder=$HOME"/ArcoLinux-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
@@ -191,8 +191,8 @@ echo
 	#Setting variables
 
 	#profiledef.sh
-	oldname1='iso_name=arcolinux'
-	newname1='iso_name=arcolinux'
+	oldname1='iso_name="arcolinux'
+	newname1='iso_name="arcolinux'
 
 	oldname2='iso_label="arcolinux'
 	newname2='iso_label="arcolinux'
