@@ -1,3 +1,3 @@
-# arcolinux-iso-dev
+# arcolinuxl-iso-dev
 
 # development
