@@ -122,12 +122,15 @@ xfsprogs
 xl2tpd
 
 ###archiso-extra
+aic94xx-firmware
 dialog
 dnsutils
 grub
 linux-headers
 logrotate
 ntp
+upd72020x-fw
+wd719x-firmware
 wget
 
 ###xorg
@@ -568,8 +571,8 @@ arcolinux-qt5-git
 arcolinux-root-git
 #arcolinux-slim
 #arcolinux-slimlock-themes-git
-arcolinux-system-config-git
-#arcolinux-system-config-dev-git
+#arcolinux-system-config-git
+arcolinux-system-config-dev-git
 #arcolinuxd-system-config-git
 arcolinux-systemd-services-git
 arcolinux-termite-themes-git
