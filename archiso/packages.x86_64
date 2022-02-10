@@ -406,7 +406,7 @@ simple-scan
 #shotwell
 speedtest-cli-git
 telegram-desktop
-timeshift
+#timeshift
 tlp
 #tree
 ufw
@@ -939,3 +939,7 @@ alacritty-themes
 base16-alacritty-git
 xfce4-terminal-base16-colors-git
 time
+pace
+sparklines-git
+fish
+arcolinux-fish-git
