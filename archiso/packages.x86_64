@@ -10,7 +10,6 @@ arch-install-scripts
 #b43-fwcutter
 base
 bind
-#brltty
 broadcom-wl-dkms
 btrfs-progs
 clonezilla
@@ -33,7 +32,6 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
-#foot-terminfo
 fsarchiver
 gnu-netcat
 gpart
@@ -44,7 +42,6 @@ grub
 hdparm
 hyperv
 intel-ucode
-irssi
 #iw
 #iwd
 jfsutils
@@ -120,7 +117,6 @@ usbutils
 vim
 #virtualbox-guest-utils-nox
 vpnc
-#wezterm-terminfo
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -132,7 +128,7 @@ xl2tpd
 aic94xx-firmware
 dialog
 dnsutils
-linux-firmware-qlogic
+libadwaita-without-adwaita-git
 linux-headers
 logrotate
 ntp
@@ -175,9 +171,6 @@ virtualbox-guest-utils
 
 ###packages for dual boot
 os-prober
-
-###LUKS encryption
-cryptsetup
 
 ###audio
 alsa-firmware
@@ -311,7 +304,8 @@ ttf-ubuntu-font-family
 #adapta-gtk-theme
 arc-gtk-theme
 #arc-darkest-theme-git
-kvantum
+kvantum-qt5-git
+kvantum-qt6-git
 #openbox-arc-git
 
 ###utilities
@@ -447,7 +441,8 @@ mkinitcpio-openswap
 ###utilities-repo
 alacritty
 appstream
-archiso
+appstream-qt5
+#archiso
 conky-lua-archers
 downgrade
 font-manager
@@ -459,8 +454,10 @@ inxi
 mintstick-git
 neofetch
 #numix-gtk-theme-git
-arcolinux-pamac-all
-#pamac-aur
+#arcolinux-pamac-all
+#octopi
+#octopi-notifier-qt5
+pamac-aur
 paru-bin
 #peek
 pulseaudio-equalizer-ladspa
@@ -582,6 +579,7 @@ arcolinux-zsh-git
 #arcolinux-cutefish-git
 #arcolinux-cwm-git
 #arcolinux-deepin-git
+#arcolinux-dk-git
 #arcolinux-dwm-git
 #arcolinux-dwm-slstatus-git
 #arcolinux-dwm-st-git
@@ -692,9 +690,9 @@ arcolinux-dconf-all-desktops-git
 #                                ARCOLINUX CALAMARES
 ###########################################################################
 
-arco-calamares
+#arco-calamares
 #arco-calamares-comp
-#arco-calamares-dev
+arco-calamares-dev
 #arco-calamares-git
 #arco-calamares-next
 #arco-calamares-wayland
@@ -713,17 +711,17 @@ arcolinux-welcome-app-git
 ckbcomp
 xkeyboard-config
 upower
-kcoreaddons
-kconfig
-ki18n
-kservice
-kwidgetsaddons
+kcoreaddons5
+kconfig5
+ki18n5
+kservice5
+kwidgetsaddons5
 kpmcore
 #arcolinux-kpmcore
 boost-libs
 libpwquality
 squashfs-tools
-plasma-framework
+plasma-framework5
 hwinfo
 qt5-xmlpatterns
 adobe-source-han-sans-jp-fonts
@@ -743,6 +741,7 @@ adobe-source-han-sans-cn-fonts
 #arcob-calamares-config-cwm-git
 #arcob-calamares-config-cutefish-git
 #arcob-calamares-config-deepin-git
+#arcob-calamares-config-dk-git
 #arcob-calamares-config-dwm-git
 #arcob-calamares-config-enlightenment-git
 #arcob-calamares-config-everyway-git
@@ -776,6 +775,8 @@ adobe-source-han-sans-cn-fonts
 arco-calamares-config-xl-dev-git
 #arco-calamares-config-xs-git
 #arco-calamares-config-xs-lts-git
+#arco-calamares-config-xs-rt-git
+#arco-calamares-config-xs-rt-lts-git
 #arco-calamares-config-xs-xanmod-git
 #arco-calamares-config-xs-zen-git
 #arco-calamares-config-xl-next-git
@@ -930,3 +931,7 @@ mkinitcpio-firmware
 arcolinux-app-glade-git
 sofirem-git
 noto-fonts-emoji
+hyfetch
+arcolinux-hyfetch-git
+#does this create issues?
+#kernel-modules-hook
